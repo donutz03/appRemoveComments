@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.remove-comments.appRemoveComments</id>
+
+    <name>AppRemoveComments</name>
+
+    <vendor email="ionut.hodoroaga20@gmail.com" url="https://www.github.com/donutz03">Ionut</vendor>
+
+    <description><![CDATA[
+This plugin removes all code comments from a specified Java file based on a given file path.<br>
+<br>
+Licensed under the MIT License. See the LICENSE file for details.
+]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <actions>
+        <action id="RemoveCommentsAction" class="com.removecomments.appremovecomments.RemoveCommentsAction" text="Remove Comments">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+</idea-plugin>
